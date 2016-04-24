@@ -22,6 +22,7 @@ import javafx.stage.FileChooser.ExtensionFilter;
 public class FXMLDocumentController implements Initializable {
 	
 	ChessBoardRenderer board = new ChessBoardRenderer();
+        private boolean turnWhitePiece = true;
 
 	@FXML
 	private Label label;
@@ -83,13 +84,27 @@ public class FXMLDocumentController implements Initializable {
 				return;
 			}
 			if (board.getMovingPiece() == null) {
+                            // implements turns movements
+                            if ( turnWhitePiece && piece.getColor() == ChessPiece.Color.WHITE) {
 				board.setMovingPiece(piece);
 				board.draw(canvas);
 				return;
+                            }
+                            if ( !turnWhitePiece && piece.getColor() == ChessPiece.Color.BLACK) {
+				board.setMovingPiece(piece);
+				board.draw(canvas);
+				return;
+                            }
 			}
 			if (board.movePieceTo(canvas, e.getX(), e.getY())) {
 				board.setMovingPiece(null);
 				board.draw(canvas);
+                                // implements changes turn
+                                if (turnWhitePiece )
+                                    turnWhitePiece = false;
+                                else
+                                    turnWhitePiece = true; 
+                                    
 				if (!board.containsKing(ChessPiece.Color.BLACK) || !board.containsKing(ChessPiece.Color.WHITE)) {
 					if (!board.containsKing(ChessPiece.Color.BLACK))
 						label.setText("Ganan las blancas");

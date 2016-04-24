@@ -5,7 +5,7 @@ public class PiecePosition {
     /**
      * Esta función devuelve si una posición es válida. Es válida si
      * está dentro de los límites del tablero ( 8 X 8)
-     * @params column, row coordenads de la posición a validar
+     * @params column, row coordenadas de la posición a validar
      * @return true si es valida y false en caso contrario
      */
     public static boolean isAvailable(int column, int row) {
@@ -82,7 +82,7 @@ public class PiecePosition {
     }
 
     /**
-     * Esta función devuleve una nueva posición a partir de la ya existente 
+     * Esta función devuelve una nueva posición a partir de la ya existente 
      * más el incremento (movimiento)
      * @params  rowCount, columCount, 
      * @return una nueva posición
@@ -97,6 +97,7 @@ public class PiecePosition {
 
     /**
      * Esta función crea una nueva pieza en la posición de la actual
+     * se clonan cuando hacemos un movimientos
      * @return una nueva piez
      */
     public PiecePosition clone() {
