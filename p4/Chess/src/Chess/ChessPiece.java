@@ -6,9 +6,9 @@ public interface ChessPiece {
         BLACK, WHITE
     }
 	
-	enum Type {
-		KING, QUEEN, ROOK, BISHOP, KNIGHT, PAWN
-	}
+    enum Type {
+            KING, QUEEN, ROOK, BISHOP, KNIGHT, PAWN
+    }
 
 	/**
 	 * Esta función devuelve el color de la pieza.
@@ -17,7 +17,7 @@ public interface ChessPiece {
     Color getColor();
 	
 	/**
-	 * Esta función devuelve el color de la pieza
+	 * Esta función devuelve el tipo de la pieza
 	 * @return 
 	 */
     Type getType();

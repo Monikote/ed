@@ -64,7 +64,7 @@ public class ChessConsole {
         ChessAI ai = createArtificialIntelligenceLogic();
         ChessAI player = createPlayerLogic();
 
-        System.out.println("Vienvenido al juego del ajedrez, tu llevas las blancas");
+        System.out.println("Bienvenido al juego del ajedrez, tu llevas las blancas");
 		
         while (table.containsKing(ChessPiece.Color.BLACK) && table.containsKing(ChessPiece.Color.WHITE)) {
 			

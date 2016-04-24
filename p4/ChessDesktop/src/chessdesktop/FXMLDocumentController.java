@@ -1,5 +1,4 @@
 package chessdesktop;
-
 import Chess.ChessPiece;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -42,6 +41,8 @@ public class FXMLDocumentController implements Initializable {
 		File file = fileChooser.showSaveDialog(null);
 		if (file != null) {
 			Charset charset = Charset.forName("US-ASCII");
+                        //this.board.getClass()
+                       
 			String s = "hello";
 			try (BufferedWriter writer = Files.newBufferedWriter(file.toPath(), charset)) {
 				writer.write(s, 0, s.length());
