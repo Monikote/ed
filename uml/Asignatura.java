@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package university;
+package universidad;
 
+/**
+ *
+ * @author monikote
+ */
 public class Asignatura {
     
-    String codigo;
-    String nombre;
+    public String codigo;
+    public String nombre;
+    public Profesor[] profesor;
+    public Estudiante[] estudiantes;
+    public String curso;
     
-    public Asignatura(){
-        
-    }
     
-    public boolean darAlta(){
-        return false;
-    }
 }

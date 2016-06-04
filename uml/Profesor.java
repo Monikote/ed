@@ -3,19 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package university;
+package universidad;
 
 /**
  *
  * @author monikote
  */
-public class Profesor extends Persona{
- 
-    String codProfesor;
-    String nombre; 
-    
-    public Profesor()
-    {
-        
-    } 
+public class Profesor {
+  
+    public String profesor;
+    public Asignatura[] impartidas;
 }

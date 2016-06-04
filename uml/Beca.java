@@ -3,15 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package university;
- 
+package universidad;
+
+/**
+ *
+ * @author monikote
+ */
 public class Beca {
     
-    String codNota;
-    String importe;
-    
-    public Beca(){
-        
-    }
-    
+    public String codigo;
+    public Integer importe;
 }

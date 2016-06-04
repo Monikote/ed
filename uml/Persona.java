@@ -3,21 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package university;
+package universidad;
 
 /**
  *
  * @author monikote
  */
 public class Persona {
-    String DNI;
-    String nombre;
-    String direccion;
-    String estado_civil;
-    
-    public Persona()
-    {
-        
-    }
-   
+    public String dni;
+    public String nombre;
+    public String direccion;
+    public String estado_civil;
+    public Estudiante[] estudiantes;
 }

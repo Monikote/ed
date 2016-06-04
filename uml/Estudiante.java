@@ -3,18 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package university;
+package universidad;
 
- 
-public class Estudiante extends Persona {
+/**
+ *
+ * @author monikote
+ */
+public class Estudiante {
+  
+    public String codigo;
+    public Universidad[] universidades;
+    public Persona[] personas;
+    public Asignatura[] matriculas;
+    public Asignatura[] examenes;
+    public Beca beca;
     
-    String idEstudiante;
-    String telefono;
-    String email;
-    
-    public Estudiante() {
+    public void Matricular(){
         
     }
 }
-    
-
